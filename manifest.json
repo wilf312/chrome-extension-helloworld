@@ -1,20 +1,17 @@
 {
-  "name": "helloworld extension",
+  "name": "current page change BGColor extension",
   "version" : "0.1",
   "manifest_version" : 2,
-  "description": "初めての拡張",
-
-
-  "background": {
-    "scripts" : [
-      "background.js"
-    ]
-  },
-
+  "description": "今いるページの背景色を変更します",
+  "permissions": [
+    "tabs",
+    "http://*/*",
+    "https://*/*"
+  ],
 
   "browser_action" : {
     "default_icon" : "icon19.png",
-    "default_title": "my first extension",
+    "default_title": "current page change BGColor extension",
     "default_popup": "popup.html"
   }
 }

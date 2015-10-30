@@ -1,6 +1,6 @@
 {
   "name": "helloworld extension",
-  "version" : 0.1,
+  "version" : "0.1",
   "manifest_version" : 2,
   "description": "初めての拡張",
 

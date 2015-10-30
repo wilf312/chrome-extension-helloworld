@@ -1,28 +1,21 @@
 'use strict';
 
-var target = [
-    "red",
-    "yellow",
-];
 
 
-let changeColor = (color) => {
+chrome.browserAction.onClicked.addListener(()=>{
   chrome.tabs.executeScript(null,{
-    "code" : "document.body.style.backgroundColor='"+ color +"'"
-  }, ()=>{
-    console.log("finish");
+    "code" : "document.body.style.backgroundColor='red'"
   });
-
-}
-
-for(let cnt= 0,len=target.length; cnt<len;cnt++) {
-  let color = target[cnt];
-
-  document.getElementById(color).onclick = ()=> {
-    console.log('click');
-    changeColor(color);
-  };
-
-}
-
-
+});
+//
+//for(let cnt= 0,len=target.length; cnt<len;cnt++) {
+//  let color = target[cnt];
+//
+//  document.getElementById(color).onclick = ()=> {
+//    console.log('click');
+//    changeColor(color);
+//  };
+//
+//}
+//
+//
